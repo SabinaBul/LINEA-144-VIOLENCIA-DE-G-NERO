@@ -1,19 +1,71 @@
-# LINEA-144-VIOLENCIA-DE-G-NERO
+# 📊 Análisis de Línea 144 (Enero - Junio 2023)
 
-Dataset elegido
+Este proyecto presenta un análisis exploratorio y de segmentación sobre los registros de la **Línea 144** en Argentina, correspondiente al período **enero a junio de 2023**. La Línea 144 brinda atención, contención y asesoramiento a personas en situación de violencia por razones de género.
 
-Linea 144 - enero-junio - 2023 Los registros corresponden a las tres sedes que gestionan la Línea 144: Provincia de Buenos Aires, CABA, y la sede de gestión nacional (actualmente a cargo del MMGyD). Enero - Junio año 2023
+📁 **Fuente de datos**: [datos.gob.ar](https://datos.gob.ar)
 
-Fuente: datos.gob.ar
+---
 
-# Objetivos del trabajo
-El objetivo principal del trabajo es clasificar según las variables presentadas. En este sentido se busca obtener información porcentual y estadística en relación al género de la persona en situación de violencia, esto mismo compararlo con el género de la persona agresora, y observar qué genero predomina en ambas categorías. Además, el proyecto busca saber en qué meses hay mayor y menor cantidad de casos.
-Se buscará investigar en qué provincia hay más cantidad de casos de violencia, cuál es el tipo de violencia y modalidad predominantes, y que sector se ve más afectado. También, saber qué vínculo con la persona agresora predomina en los casos.
-Relevar, además, la edad más afectado por la problemática.
-De la información obtenida se agrupará y clasificará a los distintos sectores afectados.
+## 🔍 Contexto
 
-De esta información, se podrá realizar en análisis pertinente para reflexionar sobre acciones y políticas necesarias en relación a los casos hallados.
+La **Línea 144** es un servicio gratuito y confidencial que funciona los 365 días del año, las 24 horas del día. Brinda asistencia en situaciones de:
 
+- Violencia física
+- Violencia psicológica
+- Violencia sexual
+- Violencia económica y patrimonial
+- Violencia simbólica
 
+Además, contempla modalidades como la violencia doméstica, institucional, laboral, mediática, obstétrica, contra la libertad reproductiva y otras.
 
-Al realizar la aplicación del modelo de machine learning por clusterización, se buscará separar por grupos a las personas afectadas, encontrando sus características para poder pensar implementaciones específicas.
+---
+
+## 🎯 Objetivos del proyecto
+
+- Obtener estadísticas sobre el género de las personas en situación de violencia y de las personas agresoras.
+- Analizar la distribución de casos por provincia y por mes.
+- Identificar los tipos y modalidades de violencia más frecuentes.
+- Evaluar la relación/vínculo más común entre víctima y agresor/a.
+- Observar los grupos etarios más afectados.
+- Aplicar **Machine Learning no supervisado (clusterización)** para agrupar características comunes de los casos.
+
+---
+
+## 🧠 Técnicas aplicadas
+
+- Limpieza y transformación de datos con **pandas**
+- Visualización con **matplotlib** y **seaborn**
+- Agrupamiento de datos y análisis porcentual
+- Aplicación de **algoritmos de clustering** (como KMeans)
+- Interpretación de resultados orientada a posibles políticas públicas
+
+---
+
+## 🗂️ Estructura del notebook
+
+1. Introducción y contexto
+2. Exploración inicial del dataset
+3. Limpieza y tratamiento de variables
+4. Análisis descriptivo
+5. Visualizaciones clave
+6. Aplicación de modelos de agrupamiento
+7. Conclusiones y reflexiones
+
+---
+
+## 📌 Requisitos
+
+Para ejecutar este notebook necesitarás tener instalado:
+
+- Python 3.8+
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- scikit-learn
+- jupyter (opcional para ejecución local)
+
+Podés instalar los requerimientos con:
+
+```bash
+pip install -r requirements.txt
